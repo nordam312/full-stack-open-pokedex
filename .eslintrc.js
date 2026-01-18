@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es6: true,
     "jest/globals": true,
   },
@@ -15,8 +16,8 @@ module.exports = {
   plugins: ["react", "jest"],
   rules: {
     indent: ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    quotes: ["error", "single"],
+    "linebreak-style": "off",
+    quotes: "off",
     semi: ["error", "never"],
     eqeqeq: "error",
     "no-trailing-spaces": "error",
@@ -25,4 +26,9 @@ module.exports = {
     "no-console": "error",
     "react/prop-types": 0,
   },
-};
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+}
