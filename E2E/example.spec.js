@@ -1,5 +1,4 @@
-const { test, describe, expect } = require("@playwright/test");
-
+import { test, describe, expect } from "@playwright/test";
 describe("Pokedex", () => {
   test("front page can be opened", async ({ page }) => {
     await page.goto("");
