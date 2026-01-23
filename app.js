@@ -11,5 +11,5 @@ app.get("/health", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`server starteddي on port samirr ja3fer ${PORT}`);
+  console.log(`serverr starteddي on port samirr ja3fer ${PORT}`);
 });
