@@ -8,6 +8,7 @@ on:
     branches:
       - main
 
+# ظظظظظظظ
 # ⭐ متغير واحد يتحكم بكل شيء
 env:
   CAN_RELEASE: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ' '), '#skip') }}
